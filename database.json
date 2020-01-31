@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "productname": "Acne studios skor",
+      "productprice": 4200,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "Acne studios coat",
+      "productprice": 8900,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "Acne studios scarf",
+      "productprice": 1700,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "Louis vuitton bag never full",
+      "productprice": 17000,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "celine belt bag",
+      "productprice": 17000,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "zara jeans",
+      "productprice": 470,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "zara shoes",
+      "productprice": 590,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "Arket shirts",
+      "productprice": 590,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "HM jeans",
+      "productprice": 590,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "HM dress",
+      "productprice": 590,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "svenskt tenn ljusstake",
+      "productprice": 2590,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "svenskt tenn duk",
+      "productprice": 2590,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "other stories dress",
+      "productprice": 590,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "other stories sweater",
+      "productprice": 790,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "other stories shoes",
+      "productprice": 990,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "hope jacket",
+      "productprice": 1990,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "MQ jeans",
+      "productprice": 1990,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    },
+    {
+      "productname": "nno7 coat",
+      "productprice": 1990,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale"
+    }
+  ],
+  "bag": [
+    {
+      "productname": "Acne studios skor",
+      "productprice": 4200,
+      "productpicture": "https://placeimg.com/640/480/tech/grayscale",
+      "username": "user"
+    }
+  ]
+}

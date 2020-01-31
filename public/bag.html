@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My second page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>SHOPPEN</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="bag.html"><img src="images/bag.png"/><span id="number">0</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h3 class="shopping">Your shopping bag</h3>
+    <div class="products"></div>
+    <hr/>
+    <div class="footer">
+    <div>Summa: <span id="sum">0</span> kr</div>
+    <div>Shipping: <span id="shipping">FREE SHIPPING</span></div>
+    <div>Moms: <span id="moms">0</span> kr</div>
+    <div>Total: <span id="total">0</span> kr</div>
+    <button class="pay">CHECK OUT</button>
+    </div>
+    <script src="klientenjs/bagNumber.js"></script>
+    <script src="klientenjs/bag.js"></script>
+  </body>
+</html>
