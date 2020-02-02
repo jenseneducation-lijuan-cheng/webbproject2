@@ -6,7 +6,6 @@ function getproducts() {
     //.data innehåller alla produkter
     .then(allProducts => {
       allProducts.data.forEach(product => {
-        // for varjer produk ska man skapa html
         // om man har en id för produkt kan man har button id="${product.id}"
         document.querySelector(".products").innerHTML += `
           <div class="oneproduct">
@@ -63,7 +62,7 @@ function addToBag(productname) {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(data)
-  }).then(response => {
+  }).then(() => {
     soldOut(productname);
     updateBagNumber();
     getproducts();
