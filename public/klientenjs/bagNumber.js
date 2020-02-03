@@ -5,4 +5,5 @@ function updateBagNumber() {
     }).then(baglist =>{
         document.getElementById("number").innerHTML=baglist.length
     })
-}
+} 
+export  default updateBagNumber

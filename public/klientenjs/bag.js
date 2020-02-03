@@ -1,3 +1,5 @@
+import  updateBagNumber from './bagNumber.js'
+
 //hämtar produkter från varukorg stoppar in i html
 function getbag() {
     // börjar med en tom div

@@ -1,9 +1,10 @@
+import  updateBagNumber from './bagNumber.js'
+
 function getproducts() {
   fetch("/api/products")
     .then(response => {
       return response.json();
     })
-    //.data innehåller alla produkter
     .then(allProducts => {
       allProducts.data.forEach(product => {
         // om man har en id för produkt kan man har button id="${product.id}"
@@ -22,9 +23,12 @@ function getproducts() {
           `button[value="${product.productname}"]`
         );
         if (b) {
-          b.addEventListener("click", async () => {
+          let _listener = async () => {
             addToBag(product.productname);
-          });
+          };
+          b.addEventListener("click", _listener);
+          // spara listener tillsmans med knappen 
+          b._listener = _listener;
         }
       });
     }).then(getSoldOut);
@@ -48,6 +52,7 @@ function soldOut(productname) {
   let b = document.querySelector(`button[value="${productname}"]`);
   b.innerHTML = "SOLD OUT";
   b.classList.add("soldOut");
+  b.removeEventListener("click", b._listener);
 }
 
 function addToBag(productname) {
