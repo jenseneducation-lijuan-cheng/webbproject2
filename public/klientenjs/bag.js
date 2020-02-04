@@ -1,8 +1,7 @@
-import  updateBagNumber from './bagNumber.js'
+import updateBagNumber from "./bagNumber.js";
 
 //hämtar produkter från varukorg stoppar in i html
 function getbag() {
-    // börjar med en tom div
   document.querySelector(".products").innerHTML = "";
   fetch("/api/bag?username=user")
     .then(response => {
@@ -43,22 +42,22 @@ function removeToBag(productname) {
   });
 }
 
-// räcknar pris i varukorg 
- function totalPrice(){
-    fetch("/api/bag?username=user")
+// räcknar pris i varukorg
+function totalPrice() {
+  fetch("/api/bag?username=user")
     .then(response => {
       return response.json();
-    }).then(baglist =>{
-        let price = 0;
-        baglist.forEach(product =>{
-            price += product.productprice
-        })
-        document.getElementById("sum").innerHTML=price
-        document.getElementById("moms").innerHTML=price*0.2
-        document.getElementById("total").innerHTML=price
     })
-
- }
+    .then(baglist => {
+      let price = 0;
+      baglist.forEach(product => {
+        price += product.productprice;
+      });
+      document.getElementById("sum").innerHTML = price;
+      document.getElementById("moms").innerHTML = price * 0.2;
+      document.getElementById("total").innerHTML = price;
+    });
+}
 getbag();
 updateBagNumber();
 totalPrice();

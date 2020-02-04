@@ -1,4 +1,4 @@
-import  updateBagNumber from './bagNumber.js'
+import updateBagNumber from "./bagNumber.js";
 
 function getproducts() {
   fetch("/api/products")
@@ -27,11 +27,12 @@ function getproducts() {
             addToBag(product.productname);
           };
           b.addEventListener("click", _listener);
-          // spara listener tillsmans med knappen 
+          // spara listener tillsmans med knappen
           b._listener = _listener;
         }
       });
-    }).then(getSoldOut);
+    })
+    .then(getSoldOut);
 }
 // hämtar alla produkter i varukorg
 function getSoldOut() {
